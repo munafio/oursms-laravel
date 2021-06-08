@@ -100,6 +100,10 @@ You can find the configurations file at `config/oursms.php` in your application,
 
 - `base_uri` is the base url of `OurSMS `service's endpoints.
 
+## Change log
+
+[CHANGELOG.md](https://github.com/munafio/oursms-laravel)
+
 ## Author
 
 [Munaf A. Mahdi](https://www.munafio.com/p/contact-me.html)
