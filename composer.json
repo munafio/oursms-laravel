@@ -1,0 +1,31 @@
+{
+    "name": "munafio/oursms-laravel",
+    "description": "Laravel OurSMS API Integration",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Munaf A. Mahdi",
+            "email": "munafaqeelmahdi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Munafio\\OurSMS\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Munafio\\OurSMS\\OursmsServiceProvider"
+            ],
+            "aliases": {
+                "Calculator": "Munafio\\OurSMS\\Facades\\OurSMS"
+            }
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    }
+}
