@@ -32,13 +32,13 @@ That's it, enjoy :)
 
 you can easily use this package inside your application, all you need is to import package's `facade` anywhere inside your application (e.g. inside the controllers) as the following:
 
-```
+```php
 use Munafio\OurSMS\Facades\OurSMS;
 ```
 
 **or**, you can use it directly without importing the `facade` as the following:
 
-```
+```php
 ...
 public function example(Request $request){
 	...
@@ -52,19 +52,19 @@ public function example(Request $request){
 
 ### Send One Single Message ( OSM )
 
-```
+```php
 OurSMS::sendOSM($phoneNumber, $message);
 ```
 
 ### Send One Time Password ( OTP )
 
-```
+```php
 OurSMS::sendOTP($phoneNumber, $message);
 ```
 
 ### Get Status for SMS
 
-```
+```php
 OurSMS::getStatus($phoneNumber, $message);
 ```
 
@@ -72,7 +72,7 @@ OurSMS::getStatus($phoneNumber, $message);
 
 You can find the configurations file at `config/oursms.php` in your application, which contains the following properties:
 
-```
+```php
 /*
 |-------------------------------------
 | OurSMS service credentials
@@ -85,13 +85,13 @@ You can find the configurations file at `config/oursms.php` in your application,
 - `user_id` you own user id in the website.
 - `secret_key` your own secret key you can find it next to the `user id` in the website.
 
-```
+```php
 /*
 |-------------------------------------
 | OurSMS service API base_uri
 |-------------------------------------
 */
-'base_uri'  =>  'https://oursms.app/api​/v1​/SMS'
+'base_uri'  =>  'https://oursms.app/api/v1/SMS'
 ```
 
 - `base_uri` is the base url of `OurSMS `service's endpoints.
