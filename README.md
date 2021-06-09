@@ -69,7 +69,7 @@ OurSMS::sendOTP($phoneNumber, $message);
 ### Get Status for SMS
 
 ```php
-OurSMS::getStatus($phoneNumber, $message);
+OurSMS::getStatus($messageId);
 ```
 
 # Configurations
