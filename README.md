@@ -30,6 +30,8 @@ OURSMS_USER_ID=
 OURSMS_SECRET_KEY=
 ```
 
+> You can find `user id` & `secret key` in your account's [settings](https://oursms.app/client/accountsettings), Read the [notes](/README.md#notes) section for more.
+
 That's it, enjoy :)
 
 # Quick Start
@@ -99,6 +101,26 @@ You can find the configurations file at `config/oursms.php` in your application,
 ```
 
 - `base_uri` is the base url of `OurSMS `service's endpoints.
+
+## Notes
+
+- You can find the `USER_ID` & `SECRET_KEY` in your service's profile as showing in the picture below
+  <img src="https://1.bp.blogspot.com/-v47sU7y8k3c/YMHtq_VYn8I/AAAAAAAACz0/Djr1pGljs1MhchWWRUOLZ_RH8I9jJabDgCLcBGAsYHQ/s16000/Screen%2BShot%2B2021-06-10%2Bat%2B1.38.28%2BPM.png" alt="munafio/oursms-laravel oursms.app"/>
+
+> The `USER_ID` must be a number, So if your `user_id` as showing in the picture above like `SP-011`, then your `user_id` should be `11`.
+
+> The `SECRET_KEY` will be changed if you change your account's password, so reconsider changing the password if you are already connected your own app with the API.
+
+- API Parameters:
+
+| Parameters  | Description                    | Type   | Status   |
+| ----------- | ------------------------------ | ------ | -------- |
+| userid      | your ID from your profile      | Number | Required |
+| Key         | your key from your profile     | String | Required |
+| phoneNumber | Target's Phone Number          | String | Required |
+| message     | here you can type your message | String | Required |
+
+> The `phoneNumber` must begin with `964` + `the number` without `0`. <br/>**e.g:** if the phone number is `07701111111` then it will be like `9647701111111`.
 
 ## Change log
 
