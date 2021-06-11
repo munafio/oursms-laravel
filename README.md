@@ -14,6 +14,8 @@ Laravel [OurSMS](https://oursms.app) API Integration
 $ composer require munafio/oursms-laravel
 ```
 
+⭕️ Note: If you got an error while installing the package make sure to update ``guzzlehttp/guzzle`` to the latest version.
+
 2. Install OurSMS using the following artisan command:
 
 ```
