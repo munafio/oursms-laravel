@@ -2,7 +2,7 @@
 ```
 The Service Has STOPPED!
 ```
-Laravel [OurSMS](https://oursms.app) API Integration
+Laravel OurSMS API Integration
 
 [![Latest Stable Version](https://poser.pugx.org/munafio/oursms-laravel/v/stable)](https://packagist.org/packages/munafio/oursms-laravel)
 [![Total Downloads](https://poser.pugx.org/munafio/oursms-laravel/downloads)](https://packagist.org/packages/munafio/oursms-laravel)
